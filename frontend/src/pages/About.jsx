@@ -3,9 +3,7 @@ import React from 'react';
 const About = () => {
     return (
         <div className="about">
-            <h1>À propos de moi</h1>
-            <p>Je suis un développeur passionné avec des compétences en développement web.</p>
-            <h2>Compétences</h2>
+            <h2>Compétences techniques:</h2>
             <ul>
                 <li>JavaScript</li>
                 <li>React</li>
@@ -17,6 +15,14 @@ const About = () => {
                 <li>C++</li>
                 <li>SQL</li>
                 <li>Git</li>
+            </ul>
+            <h2>Compétences personnelles:</h2>
+            <ul>
+                <li>Travail en équipe</li>
+                <li>Communication</li>
+                <li>Résolution de problèmes</li>
+                <li>Pensée analytique</li>
+                <li>Adaptabilité</li>
             </ul>
         </div>
     );

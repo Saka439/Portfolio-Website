@@ -1,16 +1,12 @@
 header {
-    background-color: #3498db;
+    background-color: black;
     color: white;
     padding: 20px 0;
-    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-ul {
-    list-style: none;
-    padding: 0;
-}
+
 li {
-    color: white;
+    color: black;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.1rem;
