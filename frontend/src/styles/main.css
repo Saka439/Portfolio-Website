@@ -4,7 +4,7 @@ body {
     background-color: beige;
 }
 
-/* Suppression des puces globalement */
+
 ul, ol {
     list-style: none;
     padding: 0;
@@ -15,11 +15,11 @@ li {
     list-style: none;
 }
 
-/* CSS global pour header - mais le Header.css aura la priorité */
+
 header {
-    background-color: gray; /* Changé de gray à black pour correspondre */
+    background-color: gray;
     color: white;
-    padding: 20px 0; /* Augmenté de 10px à 20px */
+    padding: 20px 0; 
     text-align: center;
 }
 
