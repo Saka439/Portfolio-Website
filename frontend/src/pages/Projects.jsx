@@ -16,7 +16,7 @@ const Projects = () => {
         {
             title: 'Portfolio Website',
             description: 'Mon site web personnel pour présenter mes projets et compétences.',
-            link: 'https://github.com/Saka439/PortfolioWebsite'
+            link: 'https://github.com/Saka439/Portfolio-Website'
         }
     ];
 
