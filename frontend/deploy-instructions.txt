@@ -1,0 +1,57 @@
+# Déploiement sur Render - ULTRA SIMPLE ! 🚀
+
+## Frontend + Backend séparés (recommandé)
+
+### 🎯 Guide complet étape par étape
+
+#### 1. Préparer MongoDB Atlas (2 minutes)
+1. Allez sur https://www.mongodb.com/atlas
+2. Créez un compte GRATUIT
+3. Créez un cluster M0 (gratuit)
+4. Créez un utilisateur dans "Database Access"
+5. Autorisez 0.0.0.0/0 dans "Network Access"
+6. Copiez l'URL de connexion
+
+#### 2. Pousser sur GitHub
+```bash
+git add .
+git commit -m "Configuration pour Render"
+git push origin master
+```
+
+#### 3. Déployer le Backend
+1. Allez sur https://render.com
+2. Connectez-vous avec GitHub
+3. "New +" → "Web Service"
+4. Sélectionnez votre repo "Portfolio-Website"
+5. Configuration :
+   - **Name**: portfolio-backend
+   - **Root Directory**: backend
+   - **Environment**: Node
+   - **Build Command**: npm install
+   - **Start Command**: npm start
+6. Variables d'environnement :
+   - `MONGODB_URI` = votre_url_atlas
+   - `NODE_ENV` = production
+7. "Create Web Service"
+
+#### 4. Déployer le Frontend
+1. "New +" → "Static Site"
+2. Même repository
+3. Configuration :
+   - **Name**: portfolio-frontend
+   - **Root Directory**: frontend
+   - **Build Command**: npm run build
+   - **Publish Directory**: build
+4. Variable d'environnement :
+   - `REACT_APP_API_URL` = https://portfolio-backend.onrender.com/api
+5. "Create Static Site"
+
+## 🎉 Avantages de Render :
+✅ Plus moderne que Heroku
+✅ Interface super claire
+✅ Déploiement automatique GitHub
+✅ HTTPS gratuit
+✅ Pas de "sleep mode"
+✅ Logs en temps réel
+✅ Base de données PostgreSQL gratuite disponible
