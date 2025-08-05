@@ -5,21 +5,51 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-li {
-    color: black;
-    margin: 0 15px;
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav ul {
+    list-style: none; /* Enlève les puces */
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none; /* Double sécurité */
+}
+
+.nav a {
+    color: white; /* Corrigé : blanc au lieu de noir */
     text-decoration: none;
     font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
-li:hover {
+
+.nav a:hover {
+    color: #3498db;
     text-decoration: underline;
 }
+
 @media (max-width: 600px) {
     header {
         font-size: 2rem;
     }
-    li {
+    
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav a {
         display: block;
-        margin: 10px 0;
+        padding: 10px 0;
     }
 }
