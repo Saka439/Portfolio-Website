@@ -1,12 +1,13 @@
-# Déploiement sur Render - SIMPLE ET MODERNE ! 🚀
+# Déploiement sur Render avec MongoDB Atlas 🚀
 
-## Étape 1 : Préparer MongoDB Atlas (Gratuit)
-1. Allez sur https://www.mongodb.com/atlas
-2. Créez un compte gratuit
-3. Créez un cluster (gratuit M0)
-4. Créez un utilisateur DB dans "Database Access"
-5. Autorisez toutes les IPs dans "Network Access" (0.0.0.0/0)
-6. Copiez votre URL de connexion
+## Étape 1 : MongoDB Atlas - TERMINÉ ✅
+Votre URL de connexion :
+```
+mongodb+srv://saidsaka30:<db_password>@cluster0.9i0ufua.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+```
+
+**⚠️ IMPORTANT :** Remplacez `<db_password>` par votre vrai mot de passe MongoDB !
+Exemple : `mongodb+srv://saidsaka30:MonMotDePasse123@cluster0.9i0ufua.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 
 ## Étape 2 : Déployer le Backend sur Render
 1. Allez sur https://render.com
@@ -20,7 +21,7 @@
    - Build Command: npm install
    - Start Command: npm start
 6. Ajoutez les variables d'environnement :
-   - MONGODB_URI = votre_url_atlas
+   - MONGODB_URI = mongodb+srv://saidsaka30:VOTRE_MOT_DE_PASSE@cluster0.9i0ufua.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
    - NODE_ENV = production
 7. Cliquez "Create Web Service"
 
