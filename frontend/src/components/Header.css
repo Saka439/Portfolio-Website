@@ -1,0 +1,29 @@
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+li:hover {
+    text-decoration: underline;
+}
+@media (max-width: 600px) {
+    header {
+        font-size: 2rem;
+    }
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+}
